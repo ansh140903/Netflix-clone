@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.header{
+    width: 98%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/backgroundimg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+    /* padding-left: 10vw; */
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;   
+    cursor: pointer;
+}
+
+.lang-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+    color: white;
+}
+
+.lang-btn img{
+    width: 10px;
+    padding-left: 7px;
+}
+
+.header-content{
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1{
+    line-height: 70px;
+    max-width: fit-content;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.email-signup{
+    /* background-color: white; */
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    /* margin-top: 30px; */
+    overflow: hidden;
+    margin: 30px 10vw;
+
+}
+
+.email-signup input{
+    background: transparent;
+    flex: 1;
+    border: 1px solid greenyellow;
+    border-radius: 4px;
+    outline: 0;
+    /* margin: 0 5vw; */
+    padding: 15px 30px;
+    color: white;
+}
+
+.email-signup button{
+    background-color: red;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 27px;
+    margin-left: 10px;
+}
+
+.gray{
+    height: 1vh;
+    background-color: rgb(46, 46, 46);
+}
+
+.features{
+    padding: 50px 12%;
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    /* background-color: black; */
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq{
+    padding: 10vh 12% 0 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight:bolder;
+    font-size: 50px;
+
+}
+
+.accordion{
+    margin: 3vh auto;
+    width: 100%;
+    max-width: 80vw;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 0.3vh;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: 520;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 45px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.1s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s, padding 0.1s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(45deg);
+}
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 13px;
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    height: 40vh;
+}
+
+.footer p{
+    margin-top: 3vh;
+    text-decoration: none;
+    color: #cecece;
+}
+
+.footer p a{
+    text-decoration: none;
+    color: #cecece;
+}
+
+.footer-content{
+    display: flex;
+    padding-right: 10vw;
+    padding-top: 3vh;
+    justify-content: space-between;
+}
+
+.footer-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-row{
+    display: contents;
+}
+
+.footer-col a{
+    padding-bottom: 2vh;
+    /* text-decoration: none; */
+    color: #cecece;
+}
